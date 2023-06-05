@@ -3,7 +3,7 @@ const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
 
-router.get('/categories', async (req, res) => {
+router.get('/', async (req, res) => {
 	try {
 		const categories = await Category.findAll({
 		  	include: [{ model: Product }],
@@ -39,7 +39,7 @@ router.post('/products', async (req, res) => {
 	}
 });
 
-router.put('/products/:id', async (req, res) => {
+router.put('/:id', async (req, res) => {
 	try {
 		const productData = await Product.update(req.body, {
 			where: {
@@ -56,7 +56,7 @@ router.put('/products/:id', async (req, res) => {
 	}
 });
 
-router.delete('/products/:id', async (req, res) => {
+router.delete('/:id', async (req, res) => {
 	try {
 	  	const productData = await Product.destroy({
 			where: {
