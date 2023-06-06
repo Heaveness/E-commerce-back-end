@@ -1,37 +1,42 @@
-// Import the seed functions for categories, products, tags, and product tags.
-const seedCategories = require('./category-seeds');
-const seedProducts = require('./product-seeds');
-const seedTags = require('./tag-seeds');
-const seedProductTags = require('./product-tag-seeds');
+// Import the required model for products.
+const { Product } = require('../models');
 
-// Import the Sequelize connection from the config file.
-const sequelize = require('../config/connection');
+// Define an array of product data with different product details.
+const productData = [
+  {
+    product_name: 'Plain T-Shirt', // Name of the product.
+    price: 14.99, // Price of the product.
+    stock: 14, // Stock quantity of the product.
+    category_id: 1, // Category ID associated with the product.
+  },
+  {
+    product_name: 'Running Sneakers',
+    price: 90.0,
+    stock: 25,
+    category_id: 5,
+  },
+  {
+    product_name: 'Branded Baseball Hat',
+    price: 22.99,
+    stock: 12,
+    category_id: 4,
+  },
+  {
+    product_name: 'Top 40 Music Compilation Vinyl Record',
+    price: 12.99,
+    stock: 50,
+    category_id: 3,
+  },
+  {
+    product_name: 'Cargo Shorts',
+    price: 29.99,
+    stock: 22,
+    category_id: 2,
+  },
+];
 
-// Function to seed the database with all data.
-const seedAll = async () => {
-	// Sync the Sequelize models with the database and force the tables to be recreated.
-	await sequelize.sync({ force: true });
-	console.log('\n----- DATABASE SYNCED -----\n');
-	
-	// Seed categories by calling the seedCategories function.
-	await seedCategories();
-	console.log('\n----- CATEGORIES SEEDED -----\n');
+// Function to seed the products by bulk creating the product data using the Product model.
+const seedProducts = () => Product.bulkCreate(productData);
 
-	// Seed products by calling the seedProducts function.
-	await seedProducts();
-	console.log('\n----- PRODUCTS SEEDED -----\n');
-
-	// Seed tags by calling the seedTags function.
-	await seedTags();
-	console.log('\n----- TAGS SEEDED -----\n');
-
-	// Seed product tags by calling the seedProductTags function.
-	await seedProductTags();
-	console.log('\n----- PRODUCT TAGS SEEDED -----\n');
-
-	// Exit the process once seeding is complete.
-	process.exit(0);
-};
-
-// Call the seedAll function to start seeding the database.
-seedAll();
+// Export the seedProducts function to be used in the seed script.
+module.exports = seedProducts;

@@ -29,7 +29,8 @@ Follow these instructions: <br>
 4. Setup SQL database using schema.sql file. <br>
 5. Use any git terminal like Git Bash or Visual Studio Code. 
 6. Use this command line to inject content into database: npm run seed <br>
-7. If you want to start the server locally through a command: node server.js or npm start<br>
+7. If you want to start the server locally through a command: node server.js or npm start <br>
+8. Use API call websites like Postman or Insomnia to get the database. <br>
   
 ## Usage
 The main usage for this application is for seeing the back-end database of an e-commerce catalog that can be retrieved and input new items.
@@ -47,6 +48,7 @@ or <br>
 npm start <br>
 <br>
 You can also use to test the database connection: npm run testdb <br>
+Use API call websites like Postman or Insomnia to get the database.<br>
 
 ## Links
 **Walkthrough:** [Link to the walkthrough video!]() <br>
@@ -54,8 +56,8 @@ You can also use to test the database connection: npm run testdb <br>
 
 ## Previews
 Terminal 1: ![Preview 1]() <br>
-Terminal 2: ![Preview 2]() <br>
-Terminal 3: ![Preview 3]() <br>
+API Terminal 1: ![Preview 2]() <br>
+API Terminal 2: ![Preview 3]() <br>
 
 ## Credits
 **Websites:** W3schools, stackoverflow, & reddit <br>
