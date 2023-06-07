@@ -17,7 +17,6 @@ Get started with our e-commerce back end today and take control of your online s
 - [Contributing](#contribution)
 - [Tests](#tests)
 - [Links](#links)
-- [Previews](#previews)
 - [Credits](#credits)
 - [Questions](#questions)
   
@@ -51,13 +50,8 @@ You can also use to test the database connection: npm run testdb <br>
 Use API call websites like Postman or Insomnia to get the database.<br>
 
 ## Links
-**Walkthrough:** [Link to the walkthrough video!]() <br>
+**Walkthrough:** [Link to the walkthrough video!](https://drive.google.com/file/d/1HMKDkWUZJEWtUsSzhktGAtNXnimgqf_B/view) <br>
 **Github Repo:** [Link to Github repository!](https://github.com/Heaveness/E-commerce-back-end) <br>
-
-## Previews
-Terminal 1: ![Preview 1]() <br>
-API Terminal 1: ![Preview 2]() <br>
-API Terminal 2: ![Preview 3]() <br>
 
 ## Credits
 **Websites:** W3schools, stackoverflow, & reddit <br>
