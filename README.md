@@ -50,7 +50,7 @@ You can also use to test the database connection: npm run testdb <br>
 Use API call websites like Postman or Insomnia to get the database.<br>
 
 ## Links
-**Walkthrough:** [Link to the walkthrough video!](https://drive.google.com/file/d/1HMKDkWUZJEWtUsSzhktGAtNXnimgqf_B/view) <br>
+**Walkthrough:** [Link to the walkthrough video!](https://drive.google.com/file/d/1L6DUAxuL5jYdbbqaRa2ghzSkC-OtfGF4/view) <br>
 **Github Repo:** [Link to Github repository!](https://github.com/Heaveness/E-commerce-back-end) <br>
 
 ## Credits
